@@ -11,6 +11,9 @@ public class Main {
     public static int notChoose;
 
     public static void main(String[] args) {
+
+        String integer = name();
+
         Bot bot1 = new Bot("Bruiser", 75, 30, 15, 50, 25);
         Bot bot2 = new Bot("Tank", 100, 20, 50, 30, 0);
         Bot bot3 = new Bot("Quick Shot", 50, 15, 5, 50, 50);
@@ -97,11 +100,15 @@ public class Main {
     }
 
     public static void sleep(int time) {
-            try {
-                Thread.sleep(time);
-            } catch(InterruptedException ex) {
-                Thread.currentThread().interrupt();
-            }
+        try {
+            Thread.sleep(time);
+        } catch(InterruptedException ex) {
+            Thread.currentThread().interrupt();
         }
+    }
 
+
+    public static String name() {
+        return "";
+    }
 }
